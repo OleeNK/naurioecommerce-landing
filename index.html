@@ -3,44 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Web Hosting - Get 75% OFF</title>
-    <style>
-        body { font-family: 'Poppins', sans-serif; text-align: center; padding: 20px; background: #f4f4f4; }
-        .container { max-width: 600px; margin: auto; padding: 30px; background: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        h1 { color: #333; font-size: 26px; }
-        .cta-btn { display: inline-block; background: #ff6600; color: #fff; padding: 15px 30px; text-decoration: none; font-size: 20px; border-radius: 5px; margin-top: 20px; font-weight: bold; transition: 0.3s; }
-        .cta-btn:hover { background: #cc5200; }
-        .features { text-align: left; margin-top: 20px; list-style: none; padding: 0; }
-        .features li { margin-bottom: 10px; font-size: 18px; }
-        .trust-badges { margin-top: 20px; }
-        .trust-badges img { width: 80px; margin: 10px; }
-        .testimonials { background: #f9f9f9; padding: 20px; margin-top: 20px; border-radius: 8px; }
-        .testimonials p { font-style: italic; }
-    </style>
+    <title>Naurio Ecommerce Private Limited</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>🚀 Get 75% OFF on Web Hosting!</h1>
-        <p>Start your website today with Hostinger - Fast, secure, and beginner-friendly.</p>
-        <a href="https://hostinger.com?REFERRALCODE=T82OLIAMR7CR" class="cta-btn" target="_blank">Claim Your Discount Now</a>
-        
-        <ul class="features">
-            <li>✅ Blazing fast speed with SSD storage</li>
-            <li>✅ 24/7 expert support from real humans</li>
-            <li>✅ Free domain, SSL & website builder</li>
-            <li>✅ 99.9% uptime guarantee for reliability</li>
-        </ul>
-        
-        <div class="trust-badges">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Secure_Seal.svg/512px-Secure_Seal.svg.png" alt="Secure Checkout">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Trustpilot_Logo.svg/256px-Trustpilot_Logo.svg.png" alt="Top Ratings">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Naurio Ecommerce</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        
-        <div class="testimonials">
-            <h3>What Our Customers Say</h3>
-            <p>"Hostinger made setting up my website effortless! Amazing speed & support!" – Sarah M.</p>
-            <p>"Highly recommended for beginners and professionals alike!" – John D.</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero bg-primary text-white text-center py-5">
+        <h1>Revolutionizing Your Business with Cutting-Edge AI & Tech Solutions</h1>
+        <p>Explore our AI-based software & innovative tech products today!</p>
+        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#emailModal">Get Access Now</button>
+    </section>
+
+    <!-- AI-Based Software Products -->
+    <section id="products" class="container py-5">
+        <h2 class="text-center mb-4">AI Software Products Designed to Empower Your Business</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="accounting_software.jpg" class="card-img-top" alt="Accounting AI Software">
+                    <div class="card-body">
+                        <h5 class="card-title">Accounting AI Software</h5>
+                        <p class="card-text">Automate your financial tasks, track expenses, and generate reports effortlessly.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#emailModal">See Product Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more products similarly... -->
+        </div>
+    </section>
+
+    <!-- Tech Hardware Products -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Latest Tech Products for Every Need</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="tech_gadget.jpg" class="card-img-top" alt="Tech Gadgets">
+                        <div class="card-body">
+                            <h5 class="card-title">Home Essential Tech Products</h5>
+                            <p class="card-text">Smart home devices, security systems, energy-efficient gadgets.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#emailModal">Browse Products</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more tech products similarly... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="container py-5">
+        <h2 class="text-center mb-4">Insights, Trends & Tips from the Naurio Ecommerce Blog</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">How AI is Revolutionizing the Health Industry</h5>
+                        <p class="card-text">Learn how AI is transforming healthcare, from diagnostics to patient management.</p>
+                        <a href="#" class="btn btn-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more blog articles similarly... -->
+        </div>
+    </section>
+
+    <!-- Email Collection Form (Modal) -->
+    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="emailModalLabel">Get Instant Access</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="emailForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="interests" class="form-label">Product Interests</label>
+                            <select class="form-select" id="interests" required>
+                                <option value="AI Software">AI Software</option>
+                                <option value="Tech Products">Tech Products</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Get Access</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>© 2025 Naurio Ecommerce Private Limited | <a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms & Conditions</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
