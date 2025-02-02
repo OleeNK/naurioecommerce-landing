@@ -1,136 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naurio Ecommerce Private Limited</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link href="assets/css/styles.css" rel="stylesheet">
+    <title>Naurio Ecommerce - Home</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
+        header {
+            background: #2d3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 24px;
+            color: #2d3e50;
+        }
+
+        /* Product Cards */
+        .product {
+            display: inline-block;
+            width: 30%;
+            margin: 15px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            color: #2d3e50;
+        }
+
+        .product p {
+            color: #777;
+            font-size: 16px;
+        }
+
+        .product button {
+            padding: 10px 20px;
+            background-color: #f04e23;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product button:hover {
+            background-color: #d9441b;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2d3e50;
+            color: white;
+        }
+
+        footer a {
+            color: #f04e23;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Animation */
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Form Section */
+        .email-form {
+            text-align: center;
+            margin-top: 40px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .email-form input[type="email"] {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .email-form button {
+            padding: 10px 20px;
+            background-color: #2d3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .email-form button:hover {
+            background-color: #f04e23;
+        }
+    </style>
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Naurio Ecommerce</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero bg-primary text-white text-center py-5">
-        <h1>Revolutionizing Your Business with Cutting-Edge AI & Tech Solutions</h1>
-        <p>Explore our AI-based software & innovative tech products today!</p>
-        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#emailModal">Get Access Now</button>
-    </section>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Naurio Ecommerce</h1>
+        <p>Your one-stop shop for AI & Tech Products</p>
+    </header>
 
-    <!-- AI-Based Software Products -->
-    <section id="products" class="container py-5">
-        <h2 class="text-center mb-4">AI Software Products Designed to Empower Your Business</h2>
-        <div class="row">
-            <!-- Product 1 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="accounting_software.jpg" class="card-img-top" alt="Accounting AI Software">
-                    <div class="card-body">
-                        <h5 class="card-title">Accounting AI Software</h5>
-                        <p class="card-text">Automate your financial tasks, track expenses, and generate reports effortlessly.</p>
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#emailModal">See Product Details</button>
-                    </div>
-                </div>
+    <div class="container">
+        <!-- Software Products Section -->
+        <section class="software-products fade-in">
+            <h2 class="section-title">AI Based Software Products</h2>
+            <div class="product">
+                <img src="https://via.placeholder.com/300" alt="Accounting AI Software">
+                <h3>Accounting AI Software</h3>
+                <p>Manage your finances effortlessly with AI-driven accounting software.</p>
+                <button>Learn More</button>
             </div>
-            <!-- Add more products similarly... -->
-        </div>
-    </section>
+            <div class="product">
+                <img src="https://via.placeholder.com/300" alt="Inventory AI Software">
+                <h3>Inventory AI Software</h3>
+                <p>Automate your inventory management with AI-powered tools.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300" alt="Call Management AI Software">
+                <h3>Call Management AI Software</h3>
+                <p>Optimize your customer support with AI-based call management.</p>
+                <button>Learn More</button>
+            </div>
+        </section>
 
-    <!-- Tech Hardware Products -->
-    <section class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Latest Tech Products for Every Need</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="tech_gadget.jpg" class="card-img-top" alt="Tech Gadgets">
-                        <div class="card-body">
-                            <h5 class="card-title">Home Essential Tech Products</h5>
-                            <p class="card-text">Smart home devices, security systems, energy-efficient gadgets.</p>
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#emailModal">Browse Products</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add more tech products similarly... -->
+        <!-- Hardware Products Section -->
+        <section class="hardware-products fade-in">
+            <h2 class="section-title">Tech Hardware Products</h2>
+            <div class="product">
+                <img src="https://via.placeholder.com/300" alt="Home Essentials Tech">
+                <h3>Home Essentials Tech</h3>
+                <p>Upgrade your home with the latest tech gadgets.</p>
+                <button>Shop Now</button>
             </div>
-        </div>
-    </section>
+            <div class="product">
+                <img src="https://via.placeholder.com/300" alt="Office Essentials Tech">
+                <h3>Office Essentials Tech</h3>
+                <p>Essential tech to enhance your work-from-home experience.</p>
+                <button>Shop Now</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300" alt="Traveling Tech">
+                <h3>Traveling Tech</h3>
+                <p>Stay connected with the latest travel gadgets.</p>
+                <button>Shop Now</button>
+            </div>
+        </section>
 
-    <!-- Blog Section -->
-    <section id="blog" class="container py-5">
-        <h2 class="text-center mb-4">Insights, Trends & Tips from the Naurio Ecommerce Blog</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">How AI is Revolutionizing the Health Industry</h5>
-                        <p class="card-text">Learn how AI is transforming healthcare, from diagnostics to patient management.</p>
-                        <a href="#" class="btn btn-link">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more blog articles similarly... -->
-        </div>
-    </section>
-
-    <!-- Email Collection Form (Modal) -->
-    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="emailModalLabel">Get Instant Access</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="emailForm">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="interests" class="form-label">Product Interests</label>
-                            <select class="form-select" id="interests" required>
-                                <option value="AI Software">AI Software</option>
-                                <option value="Tech Products">Tech Products</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Get Access</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+        <!-- Email Signup Form -->
+        <section class="email-form fade-in">
+            <h2>Stay Updated with Our Latest Products!</h2>
+            <p>Enter your email to receive exclusive offers and updates.</p>
+            <input type="email" placeholder="Enter your email" required>
+            <button>Subscribe</button>
+        </section>
     </div>
 
     <!-- Footer Section -->
-    <footer class="bg-dark text-white text-center py-4">
-        <p>© 2025 Naurio Ecommerce Private Limited | <a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms & Conditions</a></p>
+    <footer>
+        <p>&copy; 2025 Naurio Ecommerce Private Limited. All rights reserved.</p>
+        <p>Visit our <a href="#">Blog</a> for the latest articles and tech news.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-    <script src="assets/js/script.js"></script>
-
 </body>
+
 </html>
